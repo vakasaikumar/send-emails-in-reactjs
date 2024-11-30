@@ -1,9 +1,20 @@
-import React from 'react'
+import React,{useState} from "react";
+import { Navigate } from "react-router-dom";
+import '../styles/Home.css'
 
-export const Home = () => {
+const Home = () => {
+    const[author,setAuthor] = useState(false);
+    if(author){
+        return <Navigate to='/about' />
+    }
   return (
-    <div>
-        <h2>Home</h2>
+    <center>
+    <div className="home-container">
+      <h1 >Welcome To VSkDev</h1>
+      <button className="about-button" onClick={()=> setAuthor(true)}>Next</button>
     </div>
-  )
-}
+    </center>
+  );
+};
+
+export default Home;

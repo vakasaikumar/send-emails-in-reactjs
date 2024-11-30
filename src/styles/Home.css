@@ -1,0 +1,25 @@
+.home-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+    height: 100vh;
+    position: relative;
+}
+h1{
+    margin-bottom: 20px;
+}
+.about-button{
+    position: absolute;
+  bottom: 60px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.about-button:hover{
+    background-color: gray;
+}
